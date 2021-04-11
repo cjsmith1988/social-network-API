@@ -1,33 +1,37 @@
 const { Schema, model } = require('mongoose');
+const validator = require('mongoose-validator');
 const dateFormat = require('../utils/dateFormat');
 
-const PizzaSchema = new Schema({
-    pizzaName: {
+const UserSchema = new Schema({
+    userName: {
         type: String,
         required: true,
+        unique: true,
         trim: true
     },
-    createdBy: {
+    email: {
         type: String,
-        required: true,
-        trim: true
+        lowercase: true,
+        unique: true,
+        trim: true,
+        validate: [
+            validator({
+            validator: 'isEmail',
+            message: '{VALUE} is not a valid email'
+            })
+        ],
+        required: true
     },
     createdAt: {
         type: Date,
         default: Date.now,
         get: (createdAtVal) => dateFormat(createdAtVal)
     },
-    size: {
-        type: String,
-        required: true,
-        enum: ['Personal', 'Small', 'Medium', 'Large', 'Extra Large'],
-        default: 'Large'
-    },
-    toppings: [],
-    comments: [
+    friends: [],
+    thoughts: [
         {
           type: Schema.Types.ObjectId,
-          ref: 'Comment'
+          ref: 'thought'
         }
       ]
     },
@@ -40,11 +44,11 @@ const PizzaSchema = new Schema({
     }
 );
 // get total count of comments and replies on retrieval
-PizzaSchema.virtual('commentCount').get(function() {
-    return this.comments.reduce((total, comment) => total + comment.replies.length + 1, 0);
+UserSchema.virtual('thoughtCount').get(function() {
+    return this.thought.reduce((total, thought) => total + thought.reactions.length + 1, 0);
 });
 // create the Pizza model using the PizzaSchema
-const Pizza = model('Pizza', PizzaSchema);
+const User = model('User', UserSchema);
 
 // export the Pizza model
-module.exports = Pizza;
+module.exports = User;
