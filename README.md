@@ -69,8 +69,8 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
   If you have any further questions regarding this project please email: [cj1988333@hotmail.com](mailto:cj1988333@hotmail.com?subject=[Question]Social-API).
 
-![Homepage view](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScreenGrabGetUsers.PNG?raw=true)
-![Dashboard view](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScreenGrabGetThoughts.PNG?raw=true)
+![Homepage view](https://github.com/cjsmith1988/social-network-API/blob/public/assets/images/ScreenGrabGetUsers.PNG?raw=true)
+![Dashboard view](https://github.com/cjsmith1988/social-network-API/blob/public/assets/images/ScreenGrabGetThoughts.PNG?raw=true)
 ![Login view](https://github.com/cjsmith1988/social-network-API/blob/main/public/images/LoginScreenCap.PNG?raw=true)
 ![Login view](https://github.com/cjsmith1988/social-network-API/blob/main/public/images/EditPostScreenCap.PNG?raw=true)
 
