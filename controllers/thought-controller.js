@@ -81,10 +81,10 @@ const thoughtController = {
             res.status(404).json({ message: 'No user found with this id!' });
             return;
           }
-          return dbUserData;
+          res.json(dbUserData);
         })
         .catch(err => res.json(err));
-        
+        return;
       })
   },
   addReaction({ params, body }, res) {
