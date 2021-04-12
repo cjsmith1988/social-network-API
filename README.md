@@ -12,10 +12,11 @@
 
 access Github repository here: https://github.com/cjsmith1988/social-network-API/
 
-🎥 Part 1: https://youtube.com/embed/40Ln_GPJjPM
+🎥 Part 1: https://youtube.com/embed/TZHabAwIJdY
 
-🎥 Part 2: https://youtube.com/embed/Y3TF6MJbKEE
+🎥 Part 2: https://youtube.com/embed/99KZAY_EGDE
 
+🎥 Part 3: https://youtube.com/embed/jl0288oWu08
 
 To download this application localy follow these steps:
 
