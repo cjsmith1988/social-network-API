@@ -1,6 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
 const validator = require('mongoose-validator');
-const dateFormat = require('../utils/dateFormat');
+const { dateFormat } = require('../utils/dateFormat');
 
 const ReactionSchema = new Schema(
     {
