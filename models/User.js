@@ -44,9 +44,9 @@ const UserSchema = new Schema({
     }
 );
 // get total count of comments and replies on retrieval
-// UserSchema.virtual('thoughtCount').get(function() {
-//     return this.thoughts.reduce((total, thought) => total + thought.reactions.length + 1, 0);
-// });
+UserSchema.virtual('thoughtCount').get(function() {
+    return this.thoughts.reduce((total, thought) => total + thought.reactions.length + 1, 0);
+});
 // create the Pizza model using the PizzaSchema
 const User = model('User', UserSchema);
 
