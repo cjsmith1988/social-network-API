@@ -69,9 +69,9 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
   If you have any further questions regarding this project please email: [cj1988333@hotmail.com](mailto:cj1988333@hotmail.com?subject=[Question]Social-API).
 
-![Homepage view](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScrenGrabGetThoughts.PNG?raw=true)
-![Dashboard view](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScrenGrabGetUsers.PNG?raw=true)
-![Login view](https://github.com/cjsmith1988/social-network-API/blob/main/public/images/LoginScreenCap.PNG?raw=true)
-![Login view](https://github.com/cjsmith1988/social-network-API/blob/main/public/images/EditPostScreenCap.PNG?raw=true)
+![Get Thoughts](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScrenGrabGetThoughts.PNG?raw=true)
+![Get Users](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScrenGrabGetUsers.PNG?raw=true)
+![Post Reaction](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScrenGrabPostReaction.PNG?raw=true)
+![Delete Reation](https://github.com/cjsmith1988/social-network-API/blob/main/public/assets/images/ScrenGrabDeleteReaction.PNG?raw=true)
 
 
